@@ -26,7 +26,7 @@ function draw() {
   background(random(0,100), 50, 100, 10);
   pixelgrid();
   push();
-  shearX(map(mouseY, 0, height, 0, 100));
+  //shearX(map(mouseY, 0, height, 0, 100));
   wave();
   pop();
 }
@@ -77,15 +77,17 @@ function wave(){
   for (let x = 0; x <= mouseX; x += 24) {
     let y = map(sin(angle), -1, 1, mouseY-200, mouseY);
     //let y = map(sin(angle), -1, 1, 0, height);
-    stroke(random(100,200), 100, 75);
+
     noFill();
     //fill(255, 50);
     //strokeWeight(2);
-    for (i = 0; i < 10; i++){
-      ellipse(x, y, 7*i);
+    stroke(random(100,200), random(100), random(100));
+    for (i = 0; i < height*0.04; i++){
+
+      ellipse(x, y, 6*i);
       angle += angleVel;
     }
-
+    
   }
 }
 
