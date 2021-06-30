@@ -12,6 +12,7 @@ let angleVel = 0.23;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 360, 100, 100, 100);
+  background(30,50,100);
   
   //first pixel
   x[0] = 0;
@@ -23,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-  background(random(0,100), 50, 100, 10);
+  background(random(0,100), 50, 100, 1);
   pixelgrid();
   push();
   //shearX(map(mouseY, 0, height, 0, 100));
