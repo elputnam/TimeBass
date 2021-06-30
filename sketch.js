@@ -75,7 +75,7 @@ function wave(){
   startAngle += 0.015;
   let angle = startAngle;
   for (let x = 0; x <= mouseX; x += 24) {
-    let y = map(sin(angle), -1, 1, mouseY-200, mouseY);
+    let y = map(sin(angle), -1, 1, mouseY-400, mouseY);
     //let y = map(sin(angle), -1, 1, 0, height);
 
     noFill();
