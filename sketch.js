@@ -82,7 +82,7 @@ function wave(){
     //fill(255, 50);
     //strokeWeight(2);
     stroke(random(100,200), random(100), random(100));
-    for (i = 0; i < height*0.04; i++){
+    for (i = 0; i < width*0.015; i++){
 
       ellipse(x, y, 6*i);
       angle += angleVel;
