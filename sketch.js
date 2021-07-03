@@ -19,8 +19,6 @@ function setup() {
   y[0] = random(height);
   r[0] = random(10,20);
   maxCount =height*2.25;
-
-
 }
 
 function draw() {
